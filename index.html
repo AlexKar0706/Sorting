@@ -108,7 +108,7 @@
             do {
                 lineArr[iFirst].xStart = Math.ceil((lineArr[iFirst].xStart + x) * 100) / 100;
                 lineArr[iSecond].xStart = Math.ceil((lineArr[iSecond].xStart - x) * 100) / 100;
-                await sleep(10);
+                await sleep(15);
             } while (Math.abs(lineArr[iFirst].xStart - lineArr[iSecond].xStart) < Math.abs(dif))
 
             lineArr[iSecond].xStart = xFirst;
