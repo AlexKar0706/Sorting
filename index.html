@@ -103,7 +103,7 @@
         async function fancyPancyMove(iFirst, iSecond) {
             let dif = lineArr[iSecond].xStart - lineArr[iFirst].xStart;
             let xFirst = lineArr[iFirst].xStart, xSecond = lineArr[iSecond].xStart;
-            let x = dif/10;
+            let x = dif/20;
 
             do {
                 lineArr[iFirst].xStart = Math.ceil((lineArr[iFirst].xStart + x) * 100) / 100;
